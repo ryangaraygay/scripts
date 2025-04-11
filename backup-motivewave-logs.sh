@@ -1,4 +1,3 @@
-```bash
 #!/bin/bash
 
 # Source folder where the files are located
