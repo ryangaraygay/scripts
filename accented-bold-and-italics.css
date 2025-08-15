@@ -1,0 +1,14 @@
+/* Bold + italic accent color in Reading mode */
+.markdown-preview-view strong,
+.markdown-preview-view em,
+.markdown-preview-view strong em,
+.markdown-preview-view em strong {
+  color: var(--text-accent);
+}
+
+/* Bold + italic accent color in Live Preview / Source mode */
+.cm-s-obsidian span.cm-strong,
+.cm-s-obsidian span.cm-em,
+.cm-s-obsidian span.cm-strong.cm-em {
+  color: var(--text-accent);
+}
