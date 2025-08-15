@@ -1,0 +1,23 @@
+/* 
+Override the ==highlight== background color without changing the theme's actual CSS file
+Also added some padding around the text so doesnt "hug" the highlight borders and rounded them slightly too
+Location to place this CSS file can be found in Settings > Appearance > CSS Snippets (at the bottom)
+Usually it would be in /<Obsidian Vault Location>/.obsidian/snippets/
+*/
+.markdown-preview-view mark,
+.cm-s-obsidian span.cm-highlight {
+  background-color: #90EE90; /* Soft mint green — tweak as needed */
+  color: #000000;           /* renove or use "inherit" as value to keep default */
+}
+
+/* Applies to Reading mode */
+.markdown-preview-view mark {
+  padding: 0.1em 0.2em; /* top/bottom, left/right */
+  border-radius: 5px;   /* optional: soft corners */
+}
+
+/* Applies to Live Preview / Source mode */
+.cm-s-obsidian span.cm-highlight {
+  padding: 0.1em 0.2em;
+  border-radius: 5px;
+}
